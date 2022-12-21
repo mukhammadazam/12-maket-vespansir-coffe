@@ -151,3 +151,43 @@ body {
         width: 100%;
     }
 }
+
+
+/* HEADER SITE FINISHED */
+
+
+/* OUR SITE STRAT */
+
+.our-site {
+    margin-top: 136px;
+}
+
+.collection__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.3;
+}
+
+.our__cart--p {}
+
+.cart--p--title {
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+}
+
+.cart--p--text {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+
+/* OUR SITE FINISHID */
