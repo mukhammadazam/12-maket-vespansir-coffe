@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow';
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.item__link {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+
+.burger {
+    display: none;
+}
+
+.header {
+    background-image: url(../imges/Bitmap.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
+.header__site {
+    padding: 116px 0;
+    padding-left: 85px;
+    padding-right: 702px;
+}
+
+.header__site--title {
+    max-width: 493px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+}
+
+.header__site--text {
+    padding-top: 32px;
+    padding-bottom: 56px;
+    max-width: 445px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+.btn {
+    padding: 15px 31px;
+    background: #66D2CF;
+    border-radius: 6px;
+    border: none;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FEFCF7;
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        max-width: 700px;
+        width: 100%;
+    }
+    .header {
+        background-image: url(../imges/img1x\ \(1\).png);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nav__list {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .leni1 {
+        background-color: #000;
+        display: block;
+        width: 16px;
+        height: 3px;
+        margin-bottom: 3px;
+    }
+    .leni2 {
+        background-color: #000;
+        display: block;
+        width: 16px;
+        height: 3px;
+        margin-bottom: 3px;
+    }
+    .leni3 {
+        background-color: #000;
+        display: block;
+        width: 16px;
+        height: 3px;
+        margin-bottom: 3px;
+    }
+}
