@@ -102,18 +102,17 @@ body {
         max-width: 700px;
         width: 100%;
         background-image: url(../imges/img1x\ \(1\).png);
-        block-size: 100%;
-        background-position: center;
-        object-fit: cover;
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:550px) {
     .nav__list {
         display: none;
     }
     .burger {
         display: block;
+        position: relative;
+        transition: 5s;
     }
     .leni1 {
         background-color: #000;
@@ -121,17 +120,20 @@ body {
         width: 16px;
         height: 3px;
         margin-bottom: 3px;
+        border-radius: 3px;
     }
     .leni2 {
         background-color: #000;
         display: block;
         width: 16px;
         height: 3px;
+        border-radius: 3px;
         margin-bottom: 3px;
     }
     .leni3 {
         background-color: #000;
         display: block;
+        border-radius: 3px;
         width: 16px;
         height: 3px;
         margin-bottom: 3px;
@@ -150,6 +152,47 @@ body {
     .header__site--text {
         width: 100%;
     }
+}
+
+.modal {
+    position: absolute;
+    /* top: 100px; */
+    left: 0;
+    right: 0;
+    display: none;
+    width: 0;
+    height: 100%;
+    z-index: 10;
+    background-color: #66D2CF;
+}
+
+.modal__list {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    gap: 32px;
+    text-align: center;
+}
+
+.modal__item {
+    margin: 50px 0;
+}
+
+.modal__link {
+    display: block;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
+
+.modal-show {
+    display: block !important;
+    width: 100% !important;
 }
 
 
@@ -207,6 +250,7 @@ body {
     .section__site {
         max-width: 700px;
         width: 100%;
+        margin: 0 auto;
     }
     .collection {
         max-width: 689px;
