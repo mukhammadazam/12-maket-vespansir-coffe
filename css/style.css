@@ -3,6 +3,11 @@
     src: url(../fonts/Barlow-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Fraunces 9pt';
+    src: url(../fonts/Fraunces_9pt-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -289,3 +294,116 @@ body {
 
 
 /* OUR SITE FINISHID */
+
+
+/* WHO SITE START */
+
+.site-who {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.who-site {
+    position: relative;
+    background-image: url(../imges/who\(1\).png);
+    background-repeat: no-repeat;
+}
+
+.who__title {
+    padding-top: 100px;
+    padding-bottom: 32px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FEFCF7;
+}
+
+.who__text {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    padding-bottom: 317px;
+}
+
+.who__cart {
+    position: relative;
+    top: -210px;
+    z-index: 9;
+    max-width: 350px;
+    background: #0E8784;
+    border-radius: 8px;
+    padding: 72px 47px 48px 48px;
+}
+
+.img--cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart__p--title {
+    padding-top: 56px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FEFCF7;
+}
+
+.cart__p--text {
+    padding-top: 24px;
+    max-width: 255px;
+    width: 100%;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FEFCF7;
+}
+
+.cart0 {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .site-who {
+        display: table-column;
+    }
+    .who-site {
+        background-image: url(../imges/Bitmapwhoplanshed.png);
+        background-repeat: no-repeat;
+        max-width: 688px;
+        margin: 0 auto;
+    }
+    .who__cart {
+        position: relative;
+        top: -210px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 573px;
+        width: 100%;
+    }
+}
+
+
+/* WHO SITE FINISHED */
