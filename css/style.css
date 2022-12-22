@@ -298,17 +298,21 @@ body {
 
 /* WHO SITE START */
 
-.site-who {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
 .who-site {
     position: relative;
     background-image: url(../imges/who\(1\).png);
     background-repeat: no-repeat;
+}
+
+.site-who {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 380px;
+    left: 85px;
+    gap: 30px;
 }
 
 .who__title {
@@ -340,9 +344,6 @@ body {
 }
 
 .who__cart {
-    position: relative;
-    top: -210px;
-    z-index: 9;
     max-width: 350px;
     background: #0E8784;
     border-radius: 8px;
@@ -352,7 +353,7 @@ body {
 .img--cart {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .cart__p--title {
@@ -386,6 +387,8 @@ body {
 @media screen and (max-width:768px) {
     .site-who {
         display: table-column;
+        align-items: center;
+        justify-content: space-around;
     }
     .who-site {
         background-image: url(../imges/Bitmapwhoplanshed.png);
@@ -394,14 +397,39 @@ body {
         margin: 0 auto;
     }
     .who__cart {
-        position: relative;
-        top: -210px;
-        z-index: 10;
+        margin-bottom: 30px;
+        padding: 48px 0;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         max-width: 573px;
         width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .cart__p--text {
+        max-width: 344px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .site-who {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 24px;
+        right: 24px;
+    }
+    .who-site {
+        background-image: url(../imges/mob.png);
+        background-repeat: no-repeat;
+        max-width: 327px;
+        margin: 0 auto;
+        padding-bottom: 500px;
+    }
+    .who__cart {
+        display: table-column;
     }
 }
 
