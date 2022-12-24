@@ -111,7 +111,7 @@
         }
     }
     
-    @media screen and (max-width:550px) {
+    @media screen and (max-width:576px) {
         .nav__list {
             display: none;
         }
@@ -269,7 +269,7 @@
         }
     }
     
-    @media screen and (max-width:450px) {
+    @media screen and (max-width:576px) {
         .section__site {
             max-width: 327px;
             width: 100%;
@@ -456,6 +456,12 @@
         padding-bottom: 67px;
     }
     
+    .hong {
+        display: flex;
+        gap: 95px;
+        padding-bottom: 64px;
+    }
+    
     .leni10 {
         font-family: 'Fraunces 9pt';
         font-style: normal;
@@ -472,7 +478,7 @@
         font-size: 32px;
         line-height: 36px;
         color: #333D4B;
-        max-width: 255px;
+        max-width: 200px;
         width: 100%;
         padding-top: 38px;
         padding-bottom: 42px;
@@ -488,4 +494,84 @@
         line-height: 26px;
         color: #333D4B;
     }
+    
+    .hong_btn {
+        margin-bottom: 200px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .hong__title {
+            margin-bottom: 80px;
+        }
+        .how {
+            position: relative;
+            top: 731px;
+            max-width: 650px;
+            width: 100%;
+        }
+        .hong__site--leni {
+            gap: 202px;
+        }
+        .chziq {
+            max-width: 467px;
+            width: 100%;
+            position: relative;
+            top: 100px;
+        }
+    }
+    
+    @media screen and (max-width:576px) {
+        .how {
+            position: relative;
+            top: 731px;
+            max-width: 650px;
+            width: 100%;
+        }
+        .hong__title {
+            text-align: center;
+        }
+        .hong__site--leni {
+            display: none;
+        }
+        .hong__site {
+            margin-bottom: 56px;
+        }
+        .chziq {
+            display: none;
+        }
+        .hong {
+            text-align: center;
+            display: block;
+            width: 327px;
+            margin: 0 auto;
+        }
+        .hong__site--title {
+            max-width: 327px;
+        }
+        .hong__site--text {
+            max-width: 330px;
+        }
+        .hong_btn {
+            display: block;
+            width: 250px;
+            margin: 0 auto;
+        }
+        .h {
+            margin-bottom: 0;
+        }
+    }
     /* HONG SITE FINSHED */
+    
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and ( min--moz-device-pixel-ratio: 2),
+    only screen and ( -o-min-device-pixel-ratio: 2/1),
+    only screen and ( min-device-pixel-ratio: 2),
+    only screen and ( min-resolution: 192dpi),
+    only screen and ( min-resolution: 2dppx) {
+        .who-site {
+            background-image: url(../imges/hero-bg-mob@2x.png);
+        }
+        .who-site {
+            background-image: url(../imges/Bitmapwhoplanshed.png);
+        }
+    }
