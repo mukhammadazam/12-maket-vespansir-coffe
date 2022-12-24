@@ -147,7 +147,7 @@
         .hero-section-wrapper {
             margin: 0;
             padding: 99px 10px;
-            background-image: url(../imges/hero-bg-mob.jpg);
+            background-image: url(../imges/hero-bg-mob.png);
             background-repeat: no-repeat;
             background-size: 100%;
             display: flex;
@@ -568,10 +568,113 @@
     only screen and ( min-device-pixel-ratio: 2),
     only screen and ( min-resolution: 192dpi),
     only screen and ( min-resolution: 2dppx) {
+        .hero-section-wrapper {
+            background-image: url(../imges/Bitmap@2x.png);
+        }
+        .hero-section-wrapper {
+            background-image: url(../imges/img2x.png);
+        }
+        .hero-section-wrapper {
+            background-image: url(../imges/hero-bg-mob.jpg);
+        }
         .who-site {
             background-image: url(../imges/hero-bg-mob@2x.png);
         }
         .who-site {
-            background-image: url(../imges/Bitmapwhoplanshed.png);
+            background-image: url(../imges/Bitmap@2xwhoplanshed.png);
         }
+        .who-site {
+            background-image: url(../imges/who\(2\).png);
+        }
+    }
+    /* FOOTER SITE START */
+    
+    footer {
+        position: relative;
+        top: 250px;
+        background: #2C343E;
+        padding: 47px 0;
+    }
+    
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .foter {}
+    
+    .logo--1 {
+        margin: 0 24px;
+    }
+    
+    .list__item-link {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #83888F;
+    }
+    
+    @media screen and (max-width:768px) {
+        footer {
+            position: relative;
+            top: 650px;
+            background: #2C343E;
+            padding: 47px 0;
+        }
+        .footer {
+            display: block;
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .foter {
+            padding-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (max-width:576px) {
+        footer {
+            position: relative;
+            top: 650px;
+            background: #2C343E;
+            padding: 47px 0;
+        }
+        .footer {
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .foter {
+            display: block;
+            padding-left: 0px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .nav__list-item {
+            margin-bottom: 30px;
+        }
+    }
+    /* FOOTER SITE FINISHED */
+    
+     ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background: rgb(11, 8, 8);
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: rgb(63, 63, 65);
+        border-radius: 2px;
+    }
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: rgb(5, 15, 5);
     }
